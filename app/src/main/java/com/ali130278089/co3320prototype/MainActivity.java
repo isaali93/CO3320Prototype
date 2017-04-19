@@ -56,7 +56,9 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.history) {
+        if (id == R.id.hrv) {
+        } else if (id == R.id.history) {
+
         } else if (id == R.id.about) {
 
         } else if (id == R.id.settings) {
