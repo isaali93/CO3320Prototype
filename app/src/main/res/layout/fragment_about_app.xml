@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ali130278089.co3320prototype.AboutAppFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginBottom="16dp"
+        android:text="This prototype application aims to help solve the problem of chronic stress plaguing modern society through the use of wearable technology. It will aid a user in monitoring and managing prolonged levels of high stress."
+        android:textAlignment="center"
+        tools:ignore="HardcodedText"
+        tools:text="This prototype application aims to help solve the problem of chronic stress plaguing modern society through the use of wearable technology. It will aid a user in monitoring and managing prolonged levels of high stress." />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="21dp"
+        android:text="The chosen area of wearable technology to be used are heart rate monitors in order to calculate a person's heart rate variability."
+        android:textAlignment="center"
+        tools:ignore="HardcodedText"
+        tools:text="The chosen area of wearable technology to be used are heart rate monitors in order to calculate a person's heart rate variability." />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginBottom="128dp"
+        android:text="@string/about_fragment1"
+        android:textAlignment="center"
+        tools:text="Heart rate variability is a measurement of the variance between each heart beat and can be a great indicator of a user's level of stress." />
+</RelativeLayout>

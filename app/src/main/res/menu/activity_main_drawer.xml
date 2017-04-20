@@ -13,20 +13,10 @@
         <item
             android:id="@+id/about"
             android:icon="@drawable/ic_about"
-            android:title="About Application" />
+            android:title="About" />
         <item
-            android:id="@+id/settings"
-            android:icon="@drawable/ic_settings"
-            android:title="Settings" />
+            android:id="@+id/nav_send"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Send Feedback" />
     </group>
-
-    <item android:title="Feedback">
-        <menu>
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
-        </menu>
-    </item>
-
 </menu>

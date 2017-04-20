@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="100dp"
     android:background="@drawable/side_nav_bar"
     android:gravity="bottom"
     android:orientation="vertical"
@@ -13,18 +13,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:theme="@style/ThemeOverlay.AppCompat.Dark"
     android:weightSum="1">
-
-    <TextView
-        android:id="@+id/uol"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.41"
-        android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:text="@string/uol"
-        android:textAlignment="center"
-        android:textAppearance="@android:style/TextAppearance.Material.Large"
-        android:textSize="16sp"
-        tools:ignore="InefficientWeight" />
 
     <TextView
         android:id="@+id/name"
@@ -41,10 +29,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:text="130278089"
         android:textAlignment="center"
         android:textAppearance="@android:style/TextAppearance.Material.Small"
         android:textSize="12sp"
-        tools:ignore="HardcodedText"
-        tools:text="130278089" />
+        tools:ignore="HardcodedText" />
 
 </LinearLayout>

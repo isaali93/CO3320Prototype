@@ -3,6 +3,7 @@ package com.ali130278089.co3320prototype;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.FragmentManager;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -12,6 +13,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
+import android.bluetooth.BluetoothHealth;
+import android.bluetooth.BluetoothHealthCallback;
+import android.bluetooth.BluetoothHealthAppConfiguration;
+
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -26,7 +32,7 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.setDrawerListener(toggle);
+        drawer.addDrawerListener(toggle);
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
@@ -57,14 +63,19 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.hrv) {
+            Toast.makeText(this, "Button clicked", Toast.LENGTH_SHORT).show();
+
         } else if (id == R.id.history) {
+            Toast.makeText(this, "Button clicked", Toast.LENGTH_SHORT).show();
 
         } else if (id == R.id.about) {
-
-        } else if (id == R.id.settings) {
+            AboutAppFragment aboutFragment = new AboutAppFragment();
+            FragmentManager manager = getSupportFragmentManager();
+            manager.beginTransaction().replace(R.id.fragment_layout, aboutFragment,
+                    aboutFragment.getTag()).commit();
 
         } else if (id == R.id.nav_send) {
-
+            Toast.makeText(this, "Button clicked", Toast.LENGTH_SHORT).show();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
