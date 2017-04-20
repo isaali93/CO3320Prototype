@@ -62,7 +62,10 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.hrv) {
+        if (id == R.id.pair) {
+            Toast.makeText(this, "Button clicked", Toast.LENGTH_SHORT).show();
+
+        } else if (id == R.id.hrv) {
             Toast.makeText(this, "Button clicked", Toast.LENGTH_SHORT).show();
 
         } else if (id == R.id.history) {

@@ -3,9 +3,13 @@
 
     <group android:checkableBehavior="single">
         <item
+            android:id="@+id/pair"
+            android:icon="@drawable/ic_pair"
+            android:title="Pair Device" />
+        <item
             android:id="@+id/hrv"
             android:icon="@drawable/ic_hrv"
-            android:title="Measure Stress" />
+            android:title="Monitor Stress" />
         <item
             android:id="@+id/history"
             android:icon="@drawable/ic_history"
